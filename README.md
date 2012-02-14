@@ -4,5 +4,8 @@
 > file.md
 > [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
 
+### Reddit API Wiki
+[Reddit API Wiki](https://github.com/reddit/reddit/wiki/API)
+
 ### APIGEE - Reddit API
 [Reddit API on APIGee](https://apigee.com/console/reddit)
