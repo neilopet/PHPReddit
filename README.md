@@ -1,3 +1,9 @@
+### To-do
+* Documentation
+* Messages
+* Logout
+* Caching
+
 ### Markdown Syntax
 > This is the documentation for the .md (markdown)
 > syntax.  Use this when you add any README.md or any other

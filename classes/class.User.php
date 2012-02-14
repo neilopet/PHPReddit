@@ -23,4 +23,19 @@ abstract class User
 			CURLOPT_HTTPHEADER => array("Cookie: reddit_session={$this->__cookie}")
 		));
 	}
+
+	function AuthPost( $url, array $postFields )
+	{
+		$this->__http->setUrl( $url );
+		$this->Authenticate();
+		$postFields['uh'] = $this->__modhash;
+		return $this->__http->post($postFields);
+	}
+
+	function AuthGet( $url )
+	{
+		$this->__http->setUrl( $url );
+		$this->Authenticate();	
+		return $this->__http->get();
+	}
 }

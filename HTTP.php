@@ -58,10 +58,10 @@ namespace HTTP
 			);
     	}
 
-		final function setUrl( $url, array $params = NULL )
+		final function setUrl( $url )
 		{
 			$this->resetOptions();
-			$this->__url = isset($params) ? strtr($url, $params) : $url;
+			$this->__url = $url;
 		}
 
 		final function __exec( $opt )

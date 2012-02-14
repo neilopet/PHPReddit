@@ -9,3 +9,18 @@ function dump()
 		echo "\r\n--------------------------------------------------\r\n\r\n";
 	}, $args);
 }
+
+function base36_decode( $str )
+{
+	return base_convert($str, 36, 10);
+}
+
+function base36_encode( $str )
+{
+	return base_convert($str, 10, 36);
+}
+
+function FormatUrl( $url, array $rep )
+{
+	return strtr( $url, $rep );
+}

@@ -1,6 +1,6 @@
 <?php
 
-abstract class Comment
+abstract class Info
 {
 	public
 		$__http,
@@ -12,6 +12,5 @@ abstract class Comment
 		$this->__http =& $user->__http;
 	}
 
-	abstract function Reply( $topic, $text );
-	abstract function MoreChildren( $children, $id, $link_id, $pv_hex, $where);
+	abstract function GetInfo( $id );
 }
