@@ -1,5 +1,6 @@
 <?php
 
+// I'm adding another comment - Neil
 function dump()
 {
 	$args = func_get_args();
