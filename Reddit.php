@@ -1,5 +1,33 @@
 <?php
 
+/**
+* PHPReddit
+*
+* An open source PHP Wrapper for the Reddit API
+*
+* NOTICE OF LICENSE
+*
+* Licensed under a Creative Commons Attribution 3.0 Unported License
+*
+* PHPReddit by Pangaea Apps Ltd. is licensed under a 
+* Creative Commons Attribution 3.0 Unported License.
+* Permissions beyond the scope of this license may be 
+* available at licensing@pangaeaapps.com.
+*
+* @package PHPReddit
+* @author Pangaea Apps Ltd.
+* @license http://creativecommons.org/licenses/by/3.0/ Creative Commons Attribution (CC 3.0)
+* @link http://pangaeaapps.com
+* @since Version 1.0
+* @filesource
+*/
+
+/**
+* Url Namespace
+*
+* This namespace acts as a registry
+* for the entire Url scope of the Reddit API.
+*/
 namespace Urls
 {
 	// API Urls
@@ -15,6 +43,13 @@ namespace Urls
 	const INFO    		= 'http://www.reddit.com/api/info.json?id=:id';
 }
 
+/**
+* Reddit Namespace
+*
+* The entire body of the Reddit API is contained
+* within this namespace.  All abstract classes and properties
+* are embodied here.
+*/
 namespace Reddit
 {
 	class User extends \User
