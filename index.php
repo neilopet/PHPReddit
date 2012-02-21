@@ -39,7 +39,7 @@ define('THREAD_ID', 'pppef');
 $http = HTTP\Http::init();
 
 $user = new Reddit\User( $http );
-$user->Login('kr3w570', 'fuckyou');
+$user->Login('myuser', 'mypassword');
 
 $comment = new Reddit\Comment( $user );
 $story = new Reddit\Story( $user );
